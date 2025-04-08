@@ -1,6 +1,6 @@
 import org.junit.Test;
 
-public class mainTest {
+public class MainTest {
     
     @Test
     void testReturnStringAtSpecifiedIndex() {
