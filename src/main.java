@@ -1,46 +1,41 @@
-public class Main {
+public class Main implements StringList {
     public static void main (String[] args) {
         
     }
 
     @Overide
-    public void get(int index) {
+    public String get(int index) {
+        
+        return "";
+    }
+
+
+    @Override
+    public void set(int index, String value) {
+
+    }
+
+
+    @Override
+    public void add(String value) {
         
     }
 
     @Override
-    public String get(int index) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'get'");
-    }
-
-    @Override
-    public void set(int index, String value) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'set'");
-    }
-
-    @Override
-    public void add(String value) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'add'");
-    }
-
-    @Override
     public String remove(int index) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'remove'");
+        
+        return "";
     }
 
     @Override
     public int size() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'size'");
+        
+        return 0;
     }
 
     @Override
     public int capacity() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'capacity'");
+        
+        return 0;
     }
 }
