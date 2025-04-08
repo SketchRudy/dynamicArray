@@ -44,7 +44,3 @@ public class Main implements StringList {
         throw new UnsupportedOperationException("Unimplemented method 'capacity'");
     }
 }
-
-}
->>>>>>> 8f0a2442be7422eedcb1c853e379faa2954ac252
-z
