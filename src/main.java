@@ -4,7 +4,7 @@ public class Main implements StringList {
     }
 
     @Overide
-    public void get() {
+    public void get(int index) {
         
     }
 
