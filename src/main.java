@@ -1,11 +1,15 @@
 public class Main implements StringList {
     public static void main (String[] args) {
-        
+        int[] array = {10};
+        System.out.println(array);
+
     }
 
     @Overide
     public String get(int index) {
-        
+        for (int i = 0; i < index; i++) {
+            
+        }
         return "";
     }
 
