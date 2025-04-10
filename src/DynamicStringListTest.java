@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
  
@@ -32,7 +34,14 @@ import static org.junit.jupiter.api.Assertions.*;
          // Arrange
          DynamicStringList list = new DynamicStringList();
          // Act
+         list.add("X");
+         list.add("Y");
+         list.add("Z");
+         String removed = list.remove(1);
          // Assert
+         assertEquals("Y", removed);
+         assertEquals(2, list.size());
+         assertEquals("Z", list.get(1));
      }
  
      @Test
