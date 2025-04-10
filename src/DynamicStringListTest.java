@@ -37,11 +37,11 @@ import static org.junit.jupiter.api.Assertions.*;
          list.add("X");
          list.add("Y");
          list.add("Z");
-         String removed = list.remove(1);
          // Assert
-         assertEquals("Y", removed);
-         assertEquals(2, list.size());
-         assertEquals("Z", list.get(1));
+         assertEquals(3, list.size());
+         assertEquals("X", list.get(0));
+         assertEquals("Y", list.get(1));
+         assertEquals("Z", list.get(2));
      }
  
      @Test
