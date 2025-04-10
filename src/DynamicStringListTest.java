@@ -19,15 +19,18 @@ import static org.junit.jupiter.api.Assertions.*;
      @Test
      void testReplacingStringAtGivenIndexWithGivenValue() {
          // Arrange
-        
+        DynamicStringList list = new DynamicStringList();
          // Act
-         
+         list.add("dog");
+         list.set(0, "Cat");
          // Assert
+         assertEquals("Cat", list.get(0));
      }
  
      @Test
      void testAddNewStringToEndOfList() {
          // Arrange
+         DynamicStringList list = new DynamicStringList();
          // Act
          // Assert
      }
