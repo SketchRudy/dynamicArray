@@ -1,4 +1,4 @@
-class DynamicStringList implements StringList{
+public class DynamicStringList implements StringList{
     String[] strList = new String[1];
     private int size = 0;
 
