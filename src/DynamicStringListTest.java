@@ -47,22 +47,46 @@ import static org.junit.jupiter.api.Assertions.*;
      @Test
      void testRemoveStringAtGivenIndex() {
          // Arrange
+         DynamicStringList list = new DynamicStringList();
+         list.add("Person");
+         list.add("Beta");
          // Act
+         String removed = list.remove(1);
          // Assert
+         assertEquals("Beta", removed);
+         assertEquals(1, list.size());
+
      }
  
      @Test
      void testCurrentElementsInString   () {
          // Arrange
+         DynamicStringList list = new DynamicStringList();
+         list.add("me");
+         list.add("him");
+         list.add("her");
          // Act
+         
          // Assert
+         assertEquals("me", list.get(0));
+         assertEquals("him", list.get(1));
+         assertEquals("her", list.get(2));
      }
  
      @Test
      void testMaxCapacityOfArray() {
          // Arrange
+         DynamicStringList list = new DynamicStringList();
          // Act
+         for (int i = 0; i < 10; i++) {
+            list.add("Item" + i);
+         }
+         
          // Assert
+         assertTrue(list.capacity() >=10);
+
+         assertEquals(10, list.size());
+         assertEquals("Item0", list.get(0));
      }
  
  
